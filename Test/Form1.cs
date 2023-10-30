@@ -142,5 +142,10 @@ namespace Test
                 listBox2.Items.Remove(checkBox4.Text);
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            label10.Text = dateTimePicker1.Value.ToString("dd-MM-yyyy");
+        }
     }
 }

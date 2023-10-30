@@ -52,6 +52,10 @@
             checkBox4 = new CheckBox();
             listBox2 = new ListBox();
             label8 = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            label9 = new Label();
+            button5 = new Button();
+            label10 = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -232,9 +236,9 @@
             checkBox1.AutoSize = true;
             checkBox1.Location = new Point(326, 38);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(83, 19);
+            checkBox1.Size = new Size(82, 19);
             checkBox1.TabIndex = 18;
-            checkBox1.Text = "checkBox1";
+            checkBox1.Text = "Module 01";
             checkBox1.UseVisualStyleBackColor = true;
             checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
@@ -243,9 +247,9 @@
             checkBox2.AutoSize = true;
             checkBox2.Location = new Point(326, 63);
             checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(83, 19);
+            checkBox2.Size = new Size(82, 19);
             checkBox2.TabIndex = 19;
-            checkBox2.Text = "checkBox2";
+            checkBox2.Text = "Module 02";
             checkBox2.UseVisualStyleBackColor = true;
             checkBox2.CheckedChanged += checkBox2_CheckedChanged;
             // 
@@ -254,9 +258,9 @@
             checkBox3.AutoSize = true;
             checkBox3.Location = new Point(326, 88);
             checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(83, 19);
+            checkBox3.Size = new Size(82, 19);
             checkBox3.TabIndex = 20;
-            checkBox3.Text = "checkBox3";
+            checkBox3.Text = "Module 03";
             checkBox3.UseVisualStyleBackColor = true;
             checkBox3.CheckedChanged += checkBox3_CheckedChanged;
             // 
@@ -265,9 +269,9 @@
             checkBox4.AutoSize = true;
             checkBox4.Location = new Point(326, 113);
             checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(83, 19);
+            checkBox4.Size = new Size(82, 19);
             checkBox4.TabIndex = 21;
-            checkBox4.Text = "checkBox4";
+            checkBox4.Text = "Module 04";
             checkBox4.UseVisualStyleBackColor = true;
             checkBox4.CheckedChanged += checkBox4_CheckedChanged;
             // 
@@ -289,11 +293,53 @@
             label8.TabIndex = 23;
             label8.Text = "Selected Modules :";
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.CustomFormat = "dd-MMM-yyyy";
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.Location = new Point(326, 202);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(270, 23);
+            dateTimePicker1.TabIndex = 24;
+            dateTimePicker1.Value = new DateTime(2023, 10, 30, 10, 44, 46, 0);
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(326, 184);
+            label9.Name = "label9";
+            label9.Size = new Size(87, 15);
+            label9.TabIndex = 25;
+            label9.Text = "Time example :";
+            // 
+            // button5
+            // 
+            button5.Location = new Point(521, 234);
+            button5.Name = "button5";
+            button5.Size = new Size(75, 23);
+            button5.TabIndex = 26;
+            button5.Text = "Show";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(331, 238);
+            label10.Name = "label10";
+            label10.Size = new Size(34, 15);
+            label10.TabIndex = 27;
+            label10.Text = "Date:";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1189, 686);
+            Controls.Add(label10);
+            Controls.Add(button5);
+            Controls.Add(label9);
+            Controls.Add(dateTimePicker1);
             Controls.Add(label8);
             Controls.Add(listBox2);
             Controls.Add(checkBox4);
@@ -352,5 +398,9 @@
         private CheckBox checkBox4;
         private ListBox listBox2;
         private Label label8;
+        private DateTimePicker dateTimePicker1;
+        private Label label9;
+        private Button button5;
+        private Label label10;
     }
 }
