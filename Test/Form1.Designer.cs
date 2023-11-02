@@ -56,6 +56,22 @@
             label9 = new Label();
             button5 = new Button();
             label10 = new Label();
+            maskedTextBox1 = new MaskedTextBox();
+            label11 = new Label();
+            button6 = new Button();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            label12 = new Label();
+            panel3 = new Panel();
+            label13 = new Label();
+            panel4 = new Panel();
+            panel5 = new Panel();
+            textBox4 = new TextBox();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            panel4.SuspendLayout();
+            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // textBox1
@@ -331,11 +347,119 @@
             label10.TabIndex = 27;
             label10.Text = "Date:";
             // 
+            // maskedTextBox1
+            // 
+            maskedTextBox1.Location = new Point(326, 323);
+            maskedTextBox1.Mask = "00/00/0000";
+            maskedTextBox1.Name = "maskedTextBox1";
+            maskedTextBox1.Size = new Size(270, 23);
+            maskedTextBox1.TabIndex = 28;
+            maskedTextBox1.ValidatingType = typeof(DateTime);
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(326, 305);
+            label11.Name = "label11";
+            label11.Size = new Size(74, 15);
+            label11.TabIndex = 29;
+            label11.Text = "Masked text:";
+            // 
+            // button6
+            // 
+            button6.Location = new Point(506, 352);
+            button6.Name = "button6";
+            button6.Size = new Size(90, 23);
+            button6.TabIndex = 30;
+            button6.Text = "show masked";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(panel3);
+            panel1.Controls.Add(panel2);
+            panel1.Location = new Point(602, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(740, 662);
+            panel1.TabIndex = 31;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(label12);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(740, 61);
+            panel2.TabIndex = 0;
+            // 
+            // label12
+            // 
+            label12.Dock = DockStyle.Fill;
+            label12.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.Location = new Point(0, 0);
+            label12.Name = "label12";
+            label12.Size = new Size(740, 61);
+            label12.TabIndex = 0;
+            label12.Text = "Browser";
+            label12.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(panel5);
+            panel3.Controls.Add(panel4);
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(0, 61);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(740, 25);
+            panel3.TabIndex = 1;
+            // 
+            // label13
+            // 
+            label13.Dock = DockStyle.Fill;
+            label13.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label13.Location = new Point(0, 0);
+            label13.Name = "label13";
+            label13.Size = new Size(200, 25);
+            label13.TabIndex = 0;
+            label13.Text = "Enter your adress :";
+            label13.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(label13);
+            panel4.Dock = DockStyle.Left;
+            panel4.Location = new Point(0, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(200, 25);
+            panel4.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(textBox4);
+            panel5.Dock = DockStyle.Fill;
+            panel5.Location = new Point(200, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(540, 25);
+            panel5.TabIndex = 1;
+            // 
+            // textBox4
+            // 
+            textBox4.Dock = DockStyle.Fill;
+            textBox4.Location = new Point(0, 0);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(540, 23);
+            textBox4.TabIndex = 2;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1189, 686);
+            ClientSize = new Size(1354, 686);
+            Controls.Add(panel1);
+            Controls.Add(button6);
+            Controls.Add(label11);
+            Controls.Add(maskedTextBox1);
             Controls.Add(label10);
             Controls.Add(button5);
             Controls.Add(label9);
@@ -368,6 +492,12 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -402,5 +532,16 @@
         private Label label9;
         private Button button5;
         private Label label10;
+        private MaskedTextBox maskedTextBox1;
+        private Label label11;
+        private Button button6;
+        private Panel panel1;
+        private Panel panel2;
+        private Label label12;
+        private Label label13;
+        private Panel panel3;
+        private Panel panel5;
+        private Panel panel4;
+        private TextBox textBox4;
     }
 }

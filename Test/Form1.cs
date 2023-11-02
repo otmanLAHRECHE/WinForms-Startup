@@ -147,5 +147,10 @@ namespace Test
         {
             label10.Text = dateTimePicker1.Value.ToString("dd-MM-yyyy");
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(maskedTextBox1.Text);
+        }
     }
 }
